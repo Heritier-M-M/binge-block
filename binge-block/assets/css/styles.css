@@ -1,0 +1,264 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;700&display=swap');
+
+/* --- Typographie --- */
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #EDEDED;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #EDEDED;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #EDEDED;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #EDEDED;
+}
+
+p.principal {
+    color: #EDEDED;
+    font-size: 18px;
+}
+
+p.cta,
+.btn-cta {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #1C1C1F;
+}
+
+/* --- Boutons --- */
+.btn-cta {
+    background-color: #D6C8B0;
+    padding: 12px 24px;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #A98F75;
+    color: #fff;
+}
+
+/* --- Couleurs Utiles --- */
+.bg-primary {
+    background-color: #1C1C1F !important;
+}
+
+.bg-secondary {
+    background-color: #2A2A2E !important;
+}
+
+.text-secondary {
+    color: #B1B1B1 !important;
+}
+
+.text-accent {
+    color: #A98F75 !important;
+}
+
+/* Style de base commun */
+.btn-cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 32px;
+    border-radius: 999px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Variante 1 : texte seul (naked) */
+.btn-cta-naked {
+    background: transparent;
+    color: #EDEDED;
+    border: none;
+}
+
+/* Variante 2 : contour accentué fin */
+.btn-cta-outline {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    color: #EDEDED;
+    border: 2px solid #D6C8B0;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+
+/* Variante 3 : fond plein + texte sombre */
+.btn-cta-filled {
+    text-decoration: none;
+    background-color: #D6C8B0;
+    color: #1C1C1F;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+.btn-cta-outline:active {
+    text-decoration: none;
+    background-color: #D6C8B0;
+    color: #1C1C1F;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+.btn-avantage {
+  padding: 12px 24px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  color: #1C1C1F;
+
+}
+
+.nav-link-custom {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #EDEDED;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+    background-color: #D6C8B0;
+    color: #1C1C1F;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+.nav-link-custom-active {
+    text-decoration: none;
+    background-color: #D6C8B0;
+    color: #1C1C1F;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+/* Carousel*/
+
+.btn-carousel-nav:focus,
+.btn-carousel-nav:active {
+    border: none;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.img-rounded {
+  border-radius: 16px;
+}
+
+.sticky-top {
+  z-index: 1030;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gap-6 {
+  gap: 10rem;
+}
+
+main .bg-secondary {
+  background-color: #2A2A2E;
+}
+
+/* Taille du carousel produit
+main #produit .carousel {
+  width: 550px;
+  height: 550px;
+}
+*/
+/* Btn coleur du fauteuil 
+main #produit .description {
+  width: 440px;
+}
+  */
+.pe-6{
+    padding-right: 7rem;
+}
+main #produit .ft-color {
+  width: 35px;
+  height: 35px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* Arrondi complet pour un cercle ! */
+  background-color: #D6C8B0;
+  /* Change la couleur selon ton thème */
+  margin: 0 5px;
+  opacity: 0.5;
+  /* Légère transparence */
+  border: none;
+  /* Enlève la bordure Bootstrap par défaut */
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #A98F75;
+  /* Différencie le point actif */
+}
+
+.py-6 {
+  padding: 6rem 0rem 6rem 0rem;
+}
+
+.p-secondaire {
+  color: #B1B1B1;
+
+}
+
+
+/* Reset des styles par défaut des boutons Bootstrap */
+.ft-color {
+    padding: 0;
+    width: 40px; /* Taille souhaitée */
+    height: 40px; /* Taille souhaitée */
+    border: 2px solid transparent;
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+/* Couleurs spécifiques (à ajuster selon tes couleurs) */
+.ft-color1 { background-color: #A67C52 !important; }
+.ft-color2 { background-color: #D9B99B !important; }
+.ft-color3 { background-color: #5C5346 !important; }
+.ft-color4 { background-color: #3A3A3A !important; }
+
+/* Affiche uniquement un contour blanc quand sélectionné */
+.btn-check:checked + .ft-color {
+    border: 2px solid #FFFFFF !important; /* contour blanc */
+    box-shadow: none !important;
+}
+
+/* Retirer tous les effets d’hover Bootstrap inutiles */
+.ft-color:hover,
+.ft-color:active,
+.ft-color:focus {
+    border-color: #FFFFFF;
+    box-shadow: none !important;
+}
